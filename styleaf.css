@@ -214,14 +214,20 @@ FEATURES
     box-sizing: border-box;
     padding: 20px;
     border: 1px solid #eee;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 .service img {
     max-width: 100%;
+    width: 50px;
     height: auto;
+    margin-right: 15px;
 }
 .service_description {
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
@@ -237,18 +243,40 @@ QUALITY WORK
     justify-content: space-between;
     align-items: center;
 }
+.qw_container {
+    display: flex;
+    align-items: center;
+}
 .qw_row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 .qw_text {
+    flex: 1;
     max-width: 50%;
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
 }
 .qw_img {
+    flex: 1;
     max-width: 50%;
+}
+.qw_img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.qw_button {
+    background-color: #6415ff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin-top: 32px;
+    width: fit-content;
+    margin-bottom: 32px;
 }
 
 /* 
@@ -257,7 +285,13 @@ STEPS
 
 */
 
-
+#steps {
+    padding: 40px 0;
+}
+#steps .steps_row {
+    display: flex;
+    align-items: center;
+}
 #steps .row {
     display: flex;
     justify-content: space-between;
@@ -271,16 +305,27 @@ STEPS
 .steps_img {
     max-width: 50%;
 }
+.steps_img img {
+    width: 100%;
+    height: auto;
+}
 .steps_text {
     max-width: 50%;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .step_numbers {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.step_details {
+    display: flex;
     flex-direction: column;
-    gap: 32px;
-    margin-top: 32px;
+    margin-left: 16px;
+    padding: 16px 0;
+    text-align: left;
 }
 .step_numbers .h2 {
     color: dimgray;
@@ -319,11 +364,41 @@ PRICING
 .pricing_cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .card {
-    width: calc(100% / 3);
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+}
+.my-list {
+    list-style-type: none;
+    padding: 0;
+}
+.my-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.btn-pricing {
+    background-color: #6415ff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin-top: auto;
+    cursor: pointer;
 }
 
 /* 

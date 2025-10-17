@@ -150,6 +150,7 @@ nav {
     border-color: initial;
     border-image: initial;
     transition: 300ms;
+    display: inline-block;
 }
 
 /***
@@ -231,10 +232,11 @@ header .row {
 .header__customers {
     margin-top: 16px;
     opacity: 0.5;
+    max-width: 400px;
 }
 
 .header__img--wrapper {
-    width: calc(60%);
+    width: 60%;
 }
 
 .header__img {
@@ -325,9 +327,9 @@ FEATURES
 .feature__img--wrapper {
     display: flex;
     padding: 20px;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
-    border-color: rgb(229, 231, 235);
+    border-color: #e5e7eb96;
     border-image: initial;
     border-radius: 500px;
 }
@@ -509,8 +511,6 @@ VALUES
 
 .value:nth-child(1) .value__img--wrapper {
     background-color: rgb(154, 230, 180);
-    color: black;
-    opacity: 0.75;
 }
 
 .value__img--wrapper {
@@ -546,7 +546,6 @@ i {
 
 .value:nth-child(2) .value__img--wrapper {
     background-color: #feb2b2;
-    color: black;
 }
 
 #values .btn {
@@ -601,9 +600,13 @@ PRICING
     border-top-right-radius: 0.5rem;
 }
 
-.plan:nth-child(1) .plan__stripe, .plan:nth-child(1) .plan__button {
-    color: rgb(247, 250, 252);
-    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb (129, 230, 217)100%);
+.plan:nth-child(1) .plan__stripe,
+.plan:nth-child(1) .plan__button {
+    background: linear-gradient(115deg, #38b2ac 0%, #81e6d9 100%);
+}
+
+.plan:nth-child(1) .plan__button {
+    color: white;
 }
 
 .plan__top {
@@ -731,6 +734,10 @@ TESTIMONIALS
 }
 
 .testimonials__description, .testimonial__img {
+    width: 50%;
+}
+
+.testimonials__img {
     width: 50%;
 }
 

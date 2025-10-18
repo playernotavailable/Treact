@@ -25,6 +25,8 @@ a {
 }
 
 .container {
+    margin: 0 auto;
+    max-width: 1280px;
     padding: 96px 0px;
 }
 
@@ -261,6 +263,16 @@ FEATURES
 
 #features {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#features .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 #features .row__narrow {
@@ -273,6 +285,7 @@ FEATURES
     width: 100%;
     max-width: 1024px;
     margin: 0px auto;
+    text-align: center;
 }
 
 .section__tag {
@@ -309,13 +322,10 @@ FEATURES
 }
 
 .features {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
     margin-top: 40px;
-}
-
-.feature {
-    width: calc(33.33333%);
 }
 
 .feature__row {
@@ -538,6 +548,7 @@ i {
     margin-top: 16px;
     line-height: 1.625;
     color: rgb(113, 128, 150);
+    margin-left: 128px;
 }
 
 .value:nth-of-type(2) {
@@ -546,6 +557,16 @@ i {
 
 .value:nth-child(2) .value__img--wrapper {
     background-color: #feb2b2;
+}
+
+.fa-briefcase {
+    background-color: rgb(254, 178, 178);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #values .btn {
@@ -675,8 +696,10 @@ PRICING
 }
 
 .plan__bottom {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .plan__button {
